@@ -1479,9 +1479,11 @@ textarea { resize: vertical; min-height: 110px; }
   .section-header { margin-bottom: 1.5rem !important; }
 
   /* FIX 2: Numbers grid on small phones – centered */
-  .numbers-grid { grid-template-columns: repeat(2, 1fr); justify-items: center; text-align: center; }
-  .number-item { padding: 1rem; width: 100%; }
+  .numbers-section { padding: 2rem 0; }
+  .numbers-grid { grid-template-columns: repeat(2, 1fr); text-align: center; }
+  .number-item { padding: .75rem .5rem; display: flex; flex-direction: column; align-items: center; }
   .number-value { font-size: 2.2rem; }
+  .number-item p { text-align: center; }
 
   /* FIX 16: Angebote cards 1 column on phones */
   .angebote-cards { grid-template-columns: 1fr !important; }
@@ -1532,9 +1534,9 @@ textarea { resize: vertical; min-height: 110px; }
   .coaching-content { gap: 1rem; }
 
   /* FIX: Reduce gap between coaching image and heading on mobile */
-  .coaching-image-col { margin-bottom: 0; }
-  .coaching-text-col .section-tag { margin-top: 0; }
-  .coaching-text-col .section-headline { margin-top: .3rem; }
+  .coaching-image-col { margin-bottom: -1rem; }
+  .coaching-text-col .section-tag { margin-top: 0; padding-top: 0; }
+  .coaching-text-col .section-headline { margin-top: 0; }
 
   /* FIX: Process steps – reduce gap on mobile */
   .process-steps { gap: 0.5rem !important; }
@@ -2851,7 +2853,7 @@ span.nav-link--dropdown {
   height: 52px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: top;
+  object-position: center 20%;
 }
 
 .kk-testi-author-info strong {

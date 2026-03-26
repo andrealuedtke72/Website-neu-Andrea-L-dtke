@@ -43,7 +43,7 @@
       gap: 3rem;
       align-items: center;
       width: max-content;
-      animation: ticker 25s linear infinite;
+      animation: ticker 14s linear infinite;
     }
     .logo-ticker:hover { animation-play-state: paused; }
     @keyframes ticker {
@@ -118,10 +118,16 @@
     /* ── Banner-Foto tiefer positionieren (Gesicht sichtbar) ── */
     .page-banner-photo { object-position: center 15% !important; }
 
+    @media (max-width: 768px) {
+      .numbers-band .numbers-grid { grid-template-columns: 1fr !important; }
+      .numbers-band .number-item { text-align: center; padding: .75rem 1rem; }
+      .numbers-band .number-label { text-align: center; }
+    }
     @media (max-width: 480px) {
       .corp-services-grid { grid-template-columns: 1fr !important; }
       .process-steps-corp { grid-template-columns: 1fr !important; }
-      .numbers-band .numbers-grid { grid-template-columns: repeat(2, 1fr) !important; }
+      .numbers-band .numbers-grid { grid-template-columns: 1fr !important; }
+      .numbers-band .number-item { text-align: center; padding: .5rem 1rem; }
       .logo-ticker-wrap { padding: 1rem 0; }
       .cta-band { padding: 2rem 1rem !important; }
       .coaching-block { padding: .75rem 0 !important; }
@@ -414,37 +420,37 @@
       <div class="logo-ticker-wrap" id="logoTickerSection">
         <div class="logo-ticker">
           <!-- Set 1 -->
-          <img src="Logos/2021 Logo DrachenGas_blue.png" alt="DrachenGas" loading="lazy" />
-          <img src="Logos/KEBA_Logo_hellesGRAU_mitSlogan+R_CMYK_print.jpg" alt="KEBA" loading="lazy" />
-          <img src="Logos/LOGO_Kubus_2022 mini.png" alt="Kubus" style="height:80px" loading="lazy" />
-          <img src="Logos/Logo ETL 04.22 4c.jpg" alt="ETL" style="height:80px" loading="lazy" />
-          <img src="Logos/Logo Landkreis Gießen_farbig.png" alt="Landkreis Gießen" style="height:100px" loading="lazy" />
-          <img src="Logos/Logo_4c_VBMH_links_ohne_URL_NEU.jpg" alt="VBMH" loading="lazy" />
-          <img src="Logos/Logo_praxisgmbh.gif" alt="Praxis GmbH" loading="lazy" />
-          <img src="Logos/Sparkasse Wetzlar.JPG" alt="Sparkasse Wetzlar" loading="lazy" />
-          <img src="Logos/Stadt Aßlar Logo.png" alt="Stadt Aßlar" loading="lazy" />
-          <img src="Logos/Verwaltungsgericht.JPG" alt="Verwaltungsgericht" loading="lazy" />
-          <img src="Logos/Zoll_Gießen.JPG" alt="Zoll Gießen" style="height:80px" loading="lazy" />
-          <img src="Logos/enwag_logo.png" alt="enwag" style="height:100px" loading="lazy" />
-          <img src="Logos/pfeiffer-vacuum-logo.png" alt="Pfeiffer Vacuum" loading="lazy" />
-          <img src="Logos/sonoro-logo.png" alt="sonoro" style="height:32px" loading="lazy" />
-          <img src="Logos/ldk_logo.png" alt="LdK" loading="lazy" />
+          <img src="Logos/2021 Logo DrachenGas_blue.png" alt="DrachenGas" />
+          <img src="Logos/KEBA_Logo_hellesGRAU_mitSlogan+R_CMYK_print.jpg" alt="KEBA" />
+          <img src="Logos/LOGO_Kubus_2022 mini.png" alt="Kubus" style="height:80px" />
+          <img src="Logos/Logo ETL 04.22 4c.jpg" alt="ETL" style="height:80px" />
+          <img src="Logos/Logo Landkreis Gießen_farbig.png" alt="Landkreis Gießen" style="height:100px" />
+          <img src="Logos/Logo_4c_VBMH_links_ohne_URL_NEU.jpg" alt="VBMH" />
+          <img src="Logos/Logo_praxisgmbh.gif" alt="Praxis GmbH" />
+          <img src="Logos/Sparkasse Wetzlar.JPG" alt="Sparkasse Wetzlar" />
+          <img src="Logos/Stadt Aßlar Logo.png" alt="Stadt Aßlar" />
+          <img src="Logos/Verwaltungsgericht.JPG" alt="Verwaltungsgericht" />
+          <img src="Logos/Zoll_Gießen.JPG" alt="Zoll Gießen" style="height:80px" />
+          <img src="Logos/enwag_logo.png" alt="enwag" style="height:100px" />
+          <img src="Logos/pfeiffer-vacuum-logo.png" alt="Pfeiffer Vacuum" />
+          <img src="Logos/sonoro-logo.png" alt="sonoro" style="height:32px" />
+          <img src="Logos/ldk_logo.png" alt="LdK" />
           <!-- Set 2 (Duplikat für nahtlosen Loop) -->
-          <img src="Logos/2021 Logo DrachenGas_blue.png" alt="DrachenGas" loading="lazy" />
-          <img src="Logos/KEBA_Logo_hellesGRAU_mitSlogan+R_CMYK_print.jpg" alt="KEBA" loading="lazy" />
-          <img src="Logos/LOGO_Kubus_2022 mini.png" alt="Kubus" style="height:80px" loading="lazy" />
-          <img src="Logos/Logo ETL 04.22 4c.jpg" alt="ETL" style="height:80px" loading="lazy" />
-          <img src="Logos/Logo Landkreis Gießen_farbig.png" alt="Landkreis Gießen" style="height:100px" loading="lazy" />
-          <img src="Logos/Logo_4c_VBMH_links_ohne_URL_NEU.jpg" alt="VBMH" loading="lazy" />
-          <img src="Logos/Logo_praxisgmbh.gif" alt="Praxis GmbH" loading="lazy" />
-          <img src="Logos/Sparkasse Wetzlar.JPG" alt="Sparkasse Wetzlar" loading="lazy" />
-          <img src="Logos/Stadt Aßlar Logo.png" alt="Stadt Aßlar" loading="lazy" />
-          <img src="Logos/Verwaltungsgericht.JPG" alt="Verwaltungsgericht" loading="lazy" />
-          <img src="Logos/Zoll_Gießen.JPG" alt="Zoll Gießen" style="height:80px" loading="lazy" />
-          <img src="Logos/enwag_logo.png" alt="enwag" style="height:100px" loading="lazy" />
-          <img src="Logos/pfeiffer-vacuum-logo.png" alt="Pfeiffer Vacuum" loading="lazy" />
-          <img src="Logos/sonoro-logo.png" alt="sonoro" style="height:32px" loading="lazy" />
-          <img src="Logos/ldk_logo.png" alt="LdK" loading="lazy" />
+          <img src="Logos/2021 Logo DrachenGas_blue.png" alt="DrachenGas" />
+          <img src="Logos/KEBA_Logo_hellesGRAU_mitSlogan+R_CMYK_print.jpg" alt="KEBA" />
+          <img src="Logos/LOGO_Kubus_2022 mini.png" alt="Kubus" style="height:80px" />
+          <img src="Logos/Logo ETL 04.22 4c.jpg" alt="ETL" style="height:80px" />
+          <img src="Logos/Logo Landkreis Gießen_farbig.png" alt="Landkreis Gießen" style="height:100px" />
+          <img src="Logos/Logo_4c_VBMH_links_ohne_URL_NEU.jpg" alt="VBMH" />
+          <img src="Logos/Logo_praxisgmbh.gif" alt="Praxis GmbH" />
+          <img src="Logos/Sparkasse Wetzlar.JPG" alt="Sparkasse Wetzlar" />
+          <img src="Logos/Stadt Aßlar Logo.png" alt="Stadt Aßlar" />
+          <img src="Logos/Verwaltungsgericht.JPG" alt="Verwaltungsgericht" />
+          <img src="Logos/Zoll_Gießen.JPG" alt="Zoll Gießen" style="height:80px" />
+          <img src="Logos/enwag_logo.png" alt="enwag" style="height:100px" />
+          <img src="Logos/pfeiffer-vacuum-logo.png" alt="Pfeiffer Vacuum" />
+          <img src="Logos/sonoro-logo.png" alt="sonoro" style="height:32px" />
+          <img src="Logos/ldk_logo.png" alt="LdK" />
         </div>
       </div>
     </div>
