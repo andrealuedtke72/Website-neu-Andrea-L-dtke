@@ -136,6 +136,15 @@
   .kk-martina-testi strong { font-style:normal; color:var(--clr-text); }
   .kk-martina-author { margin-top:1rem; font-style:normal; font-size:.9rem; color:var(--clr-text-light); }
 
+  @media (max-width: 768px) {
+    .kk-kennst-layout { flex-direction:column; }
+    .kk-kennst-layout .kk-kennst-img { width:100%; }
+    .kk-kennst-layout .kk-kennst-img img { width:100%; height:auto !important; max-height:320px; object-fit:cover; display:block !important; }
+    .kk-results-grid { grid-template-columns:1fr !important; }
+    .kk-results-grid img { width:100%; height:auto; display:block !important; }
+    .kk-program-layout { flex-direction:column; }
+  }
+
   @media (max-width: 480px) {
     .kk-hero { min-height: 100svh; }
     .kk-hero-content { padding-top: 90px; }
@@ -145,9 +154,12 @@
     .kk-testimonials { grid-template-columns: 1fr !important; }
     .kk-faq-q { font-size: .9rem; }
     .kk-kennst-layout { flex-direction:column; }
-    .kk-kennst-layout .kk-kennst-img { width:100%; }
+    .kk-kennst-layout .kk-kennst-img { width:100%; overflow:visible; }
+    .kk-kennst-layout .kk-kennst-img img { width:100%; height:auto !important; max-height:280px; object-fit:cover; display:block !important; }
     .kk-pain-grid { grid-template-columns:1fr !important; }
     .kk-results-grid { grid-template-columns:1fr !important; }
+    .kk-results-grid > div:last-child { display:block !important; }
+    .kk-results-grid img { width:100%; height:auto; display:block !important; margin-top:1.5rem; }
     .kk-program-layout { flex-direction:column; }
   }
 </style>
@@ -418,7 +430,7 @@
   <!-- ═══════════════════════════════════════════
        BONI
   ══════════════════════════════════════════════ -->
-  <section class="kk-section kk-section--warm">
+  <section class="kk-section kk-section--warm" style="padding-top:0">
     <div class="kk-container">
       <h2 class="kk-headline">Freu dich außerdem auf<br /><em>diese Boni</em></h2>
       <p class="kk-intro">Damit du wirklich dranbleibst und auch im Alltag kleine Auszeiten findest, bekommst du zwei kraftvolle Extras mit an die Hand:</p>

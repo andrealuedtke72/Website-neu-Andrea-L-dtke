@@ -1358,12 +1358,15 @@ textarea { resize: vertical; min-height: 110px; }
    ===================================================== */
 @media (max-width: 1024px) {
   .about-grid,
-  .coaching-content,
   .koerperklar-grid,
   .corporate-grid,
   .contact-grid {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
+  }
+  .coaching-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
   }
 
   .about-text { padding-left: 0; }
@@ -1475,9 +1478,9 @@ textarea { resize: vertical; min-height: 110px; }
   .section-padding { padding: 2.5rem 0 !important; }
   .section-header { margin-bottom: 1.5rem !important; }
 
-  /* FIX 2: Numbers grid on small phones */
-  .numbers-grid { grid-template-columns: repeat(2, 1fr); }
-  .number-item { padding: 1rem; }
+  /* FIX 2: Numbers grid on small phones – centered */
+  .numbers-grid { grid-template-columns: repeat(2, 1fr); justify-items: center; text-align: center; }
+  .number-item { padding: 1rem; width: 100%; }
   .number-value { font-size: 2.2rem; }
 
   /* FIX 16: Angebote cards 1 column on phones */
@@ -1498,8 +1501,17 @@ textarea { resize: vertical; min-height: 110px; }
   .floating-badge { display: none; }
   .coaching-image-frame { max-width: 100%; }
 
-  /* FIX 6: About image badge size on mobile */
-  .about-image-badge { width: 90px !important; height: 90px !important; font-size: .65rem !important; }
+  /* FIX 6: About image badge – auto size so full text is visible */
+  .about-image-badge {
+    width: auto !important;
+    height: auto !important;
+    font-size: .6rem !important;
+    padding: .8rem 1rem !important;
+    right: 0 !important;
+    bottom: 1rem !important;
+    max-width: 60%;
+    text-align: center;
+  }
 
   /* FIX 4: Button padding on mobile */
   .btn-large { padding: 1rem 1.8rem !important; }
@@ -1517,7 +1529,16 @@ textarea { resize: vertical; min-height: 110px; }
   .kurs-card { margin-bottom: .5rem; }
   .offers-grid { gap: 1rem; }
   .corp-services-grid { gap: 1rem; }
-  .coaching-content { gap: 1.5rem; }
+  .coaching-content { gap: 1rem; }
+
+  /* FIX: Reduce gap between coaching image and heading on mobile */
+  .coaching-image-col { margin-bottom: 0; }
+  .coaching-text-col .section-tag { margin-top: 0; }
+  .coaching-text-col .section-headline { margin-top: .3rem; }
+
+  /* FIX: Process steps – reduce gap on mobile */
+  .process-steps { gap: 0.5rem !important; }
+  .process-step { padding: 0.8rem 0 !important; }
 }
 
 /* =====================================================
