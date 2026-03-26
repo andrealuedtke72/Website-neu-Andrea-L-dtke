@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impressum | Andrea Lüdtke</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Cinzel:wght@400;500;600&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .legal-page { padding: 8rem 0 4rem; }
+    .legal-page h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem,4vw,3rem); color: var(--clr-forest); margin-bottom: 2rem; }
+    .legal-page h2 { font-family: 'Cinzel', serif; font-size: 1rem; letter-spacing: .1em; text-transform: uppercase; color: var(--clr-forest-mid); margin: 2rem 0 .75rem; }
+    .legal-page p { color: var(--clr-text-mid); line-height: 1.8; margin-bottom: 1rem; font-size: .95rem; }
+    .legal-page a { color: var(--clr-forest-mid); }
+  </style>
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <header class="nav-wrapper scrolled" id="navbar">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-first">Andrea</span>
+        <span class="logo-last">Lüdtke</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#ueber-mich" class="nav-link">Über mich</a></li>
+        <li><a href="coaching.html" class="nav-link">Coaching</a></li>
+        <li class="has-dropdown">
+          <span class="nav-link nav-link--dropdown">Kurse &amp; Workshops</span>
+          <ul class="nav-dropdown">
+            <li><a href="faszienyoga-wetzlar.html">Faszienyogakurs Wetzlar</a></li>
+            <li><a href="faszienyoga-online.html">Faszienyogakurs Online</a></li>
+            <li><a href="koerperklar.html">Körperklar</a></li>
+          </ul>
+        </li>
+        <li><a href="unternehmen.html" class="nav-link">Unternehmen</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="index.html#kontakt" class="nav-link nav-cta">Kostenlose Anfrage</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="legal-page">
+    <div class="container" style="max-width:800px">
+      <h1>Impressum</h1>
+
+      <h2>Gesetzliche Anbieterkennung</h2>
+      <p>Andrea Lüdtke<br />
+      www.andrea-luedtke.de<br />
+      Pestalozzistraße 33<br />
+      35614 Aßlar<br />
+      Deutschland</p>
+      <p>Telefon: 0178-3145766<br />
+      E-Mail: info@andrea-luedtke.de</p>
+      <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+      <p>Andrea Lüdtke<br />
+      Pestalozzistraße 33<br />
+      35614 Aßlar</p>
+
+      <h2>Alternative Streitbeilegung</h2>
+      <p>Die Europäische Kommission stellt eine Plattform für die außergerichtliche Online-Streitbeilegung (OS-Plattform) bereit, aufrufbar unter <a href="https://ec.europa.eu/odr" target="_blank" rel="noopener">https://ec.europa.eu/odr</a>.</p>
+      <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-simple">
+    <div class="container">
+      <div class="newsletter-simple-inner reveal-up">
+        <p>Hier kannst du dich zu meinem Newsletter eintragen</p>
+        <button class="btn btn-primary" onclick="openNewsletterModal()">Newsletter abonnieren</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Andrea Lüdtke</div>
+          <p>Selbstregulation</p>
+          <div class="footer-social">
+            <a class="social-link" aria-label="Instagram" href="https://www.instagram.com/andrea.luedtke.life/" target="_blank" rel="noopener"><img src="Logos/Instagram_Logo.png" alt="Instagram" loading="lazy" /></a>
+            <a class="social-link" aria-label="Facebook" href="https://www.facebook.com/luedtkeandrea1" target="_blank" rel="noopener"><img src="Logos/facebook_logo.png" alt="Facebook" loading="lazy" /></a>
+            <a class="social-link" aria-label="YouTube" href="https://www.youtube.com/@andrea.luedtke" target="_blank" rel="noopener"><img src="Logos/Youtube Logo.png" alt="YouTube" loading="lazy" /></a>
+            <a class="social-link" aria-label="LinkedIn" href="https://www.linkedin.com/in/andrea-l%C3%BCdtke-life/" target="_blank" rel="noopener"><img src="Logos/Linkedin logo.png" alt="LinkedIn" loading="lazy" /></a>
+            <a class="social-link" aria-label="Pinterest" href="https://de.pinterest.com/andrealuedtke_innerrelease/" target="_blank" rel="noopener"><img src="Logos/Pinterest Logo.png" alt="Pinterest" loading="lazy" /></a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html#ueber-mich">Über mich</a></li>
+            <li><a href="coaching.html">Coaching</a></li>
+            <li><a href="kurse-workshops.html">Kurse &amp; Workshops</a></li>
+            <li><a href="koerperklar.html">Körperklar</a></li>
+            <li><a href="unternehmen.html">Unternehmen</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#" onclick="openNewsletterModal();return false;">Newsletter</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Angebote</h4>
+          <ul>
+            <li><a href="coaching.html">1:1 Coaching</a></li>
+            <li><a href="koerperklar.html">7-Tage-Reset</a></li>
+            <li><a href="kurse-workshops.html">Faszienyoga Kurse</a></li>
+            <li><a href="unternehmen.html">Für Unternehmen</a></li>
+            <li><a href="index.html#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Kontakt</h4>
+          <p>+49 178 3145766</p>
+          <p>info@andrea-luedtke.de</p>
+          <p>Aßlar, Hessen</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Andrea Lüdtke. Alle Rechte vorbehalten.</p>
+        <div class="footer-legal">
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+          <a href="agb.html">AGB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://andrea-luedtke.de/sitemap.xml
+
+# AI / LLM Information
+# Structured information for AI assistants and language models:
+# https://andrea-luedtke.de/llms.txt (overview)
+# https://andrea-luedtke.de/llms-full.txt (detailed)

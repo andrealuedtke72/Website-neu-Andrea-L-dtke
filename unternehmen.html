@@ -1,0 +1,585 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fit im Job – Betriebliche Gesundheitsförderung | Andrea Lüdtke</title>
+  <meta name="description" content="Betriebliche Gesundheitsförderung mit Andrea Lüdtke: Faszienyoga, Stressmanagement und Selbstregulation für Unternehmen und Teams." />
+  <link rel="canonical" href="https://andrea-luedtke.de/unternehmen.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:site_name" content="Andrea Lüdtke" />
+  <meta property="og:url" content="https://andrea-luedtke.de/unternehmen.html" />
+  <meta property="og:title" content="Betriebliche Gesundheitsförderung – Faszienyoga für Unternehmen | Andrea Lüdtke" />
+  <meta property="og:description" content="Betriebliche Gesundheitsförderung mit Andrea Lüdtke: Faszienyoga, Stressmanagement und Selbstregulation für Teams – vor Ort oder online." />
+  <meta property="og:image" content="https://andrea-luedtke.de/images/unternehmen.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Betriebliche Gesundheitsförderung – Faszienyoga für Unternehmen | Andrea Lüdtke" />
+  <meta name="twitter:description" content="Betriebliche Gesundheitsförderung mit Andrea Lüdtke: Faszienyoga, Stressmanagement und Selbstregulation für Teams – vor Ort oder online." />
+  <meta name="twitter:image" content="https://andrea-luedtke.de/images/unternehmen.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Cinzel:wght@400;500;600&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Logo-Ticker */
+    .logo-ticker-wrap {
+      overflow: hidden;
+      position: relative;
+      padding: 1.5rem 0;
+    }
+    .logo-ticker-wrap::before,
+    .logo-ticker-wrap::after {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      width: 80px;
+      z-index: 2;
+    }
+    .logo-ticker-wrap::before { left: 0; background: linear-gradient(to right, #fff, transparent); }
+    .logo-ticker-wrap::after  { right: 0; background: linear-gradient(to left,  #fff, transparent); }
+    .logo-ticker {
+      display: flex;
+      gap: 3rem;
+      align-items: center;
+      width: max-content;
+      animation: ticker 25s linear infinite;
+    }
+    .logo-ticker:hover { animation-play-state: paused; }
+    @keyframes ticker {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .logo-ticker img {
+      height: 48px;
+      width: auto;
+      filter: grayscale(1) opacity(.6);
+      transition: filter .3s;
+      flex-shrink: 0;
+    }
+    .logo-ticker img:hover { filter: grayscale(0) opacity(1); }
+    /* Fallback when no logos yet */
+    .logos-empty-note {
+      text-align: center;
+      color: var(--clr-text-light);
+      font-size: .9rem;
+      font-style: italic;
+      padding: 1rem 0 2rem;
+    }
+
+    /* ── Unternehmen: Service-Kacheln auf hellem Hintergrund ── */
+    .corp-service-card {
+      background: #fff !important;
+      border: 1.5px solid var(--clr-forest-light) !important;
+    }
+    .corp-service-card h3 {
+      color: #5288A0 !important;
+    }
+    .corp-service-card p {
+      color: var(--clr-text-mid) !important;
+    }
+    .corp-service-icon { text-align: center !important; }
+    .coaching-value-card .value-num { text-align: center !important; }
+    .corp-service-list {
+      margin-top: 1.2rem !important;
+    }
+    .corp-service-list li {
+      color: #5288A0 !important;
+      margin-bottom: .4rem;
+      font-size: .82rem !important;
+      font-weight: 600 !important;
+    }
+
+    /* ── Unternehmen: Prozess-Schritte auf hellem Hintergrund ── */
+    .process-step h3 {
+      color: #5288A0 !important;
+    }
+    .process-step p {
+      color: var(--clr-text-mid) !important;
+    }
+
+    /* ── Unternehmen: Abstände kompakter ── */
+    .section-padding { padding: 3.5rem 0 !important; }
+    .section-header  { margin-bottom: 2rem !important; }
+    .corp-services-grid { margin-bottom: 0 !important; }
+    .numbers-band.section-padding { padding: 2.5rem 0 !important; }
+    .cta-band { padding: 3rem 1.5rem !important; }
+
+    /* ── Coaching-Blöcke 01/02/03: engere Abstände ── */
+    .coaching-block {
+      margin-bottom: 1.1rem !important;
+      padding-bottom: 1.1rem !important;
+    }
+    .mt-2 { margin-top: .75rem !important; }
+
+    /* ── Statement zentrieren ── */
+    .statement-band .container { text-align: center; }
+
+    /* ── Banner-Foto tiefer positionieren (Gesicht sichtbar) ── */
+    .page-banner-photo { object-position: center 15% !important; }
+
+    @media (max-width: 480px) {
+      .corp-services-grid { grid-template-columns: 1fr !important; }
+      .process-steps-corp { grid-template-columns: 1fr !important; }
+      .numbers-band .numbers-grid { grid-template-columns: repeat(2, 1fr) !important; }
+      .logo-ticker-wrap { padding: 1rem 0; }
+      .cta-band { padding: 2rem 1rem !important; }
+      .coaching-block { padding: .75rem 0 !important; }
+    }
+    /* ── Unternehmens-Testimonials ── */
+    .untern-testimonials { background: var(--clr-ivory-dark); padding: var(--space-lg) 0; }
+    .untern-testimonials h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.3rem,2.5vw,1.8rem); color: var(--clr-forest); text-align: center; margin-bottom: 2.5rem; }
+    .untern-testi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; max-width: 960px; margin: 0 auto; align-items: stretch; }
+    .untern-testi-item { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1.25rem; justify-content: space-between; }
+    .untern-testi-item .testi-text { flex: 1; }
+    .untern-testi-item .testi-logo { height: 36px; object-fit: contain; }
+    .untern-testi-item .testi-logo-enwag { height: 48px; }
+    .untern-testi-item .testi-text { font-family: 'Playfair Display', serif; font-size: clamp(.9rem,1.6vw,1.05rem); font-style: italic; color: var(--clr-forest); line-height: 1.7; }
+    .untern-testi-item .testi-text strong { font-style: normal; }
+    .untern-testi-item .testi-author { font-size: .82rem; color: var(--clr-text-mid); font-style: normal; }
+    @media (max-width: 640px) { .untern-testi-grid { grid-template-columns: 1fr; } }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Betriebliche Gesundheitsförderung",
+  "provider": {
+    "@type": "Person",
+    "name": "Andrea Lüdtke",
+    "url": "https://andrea-luedtke.de"
+  },
+  "url": "https://andrea-luedtke.de/unternehmen.html",
+  "description": "Faszienyoga, Stressmanagement und Selbstregulation für Unternehmen und Teams – vor Ort oder online.",
+  "areaServed": {"@type": "Country", "name": "Deutschland"},
+  "serviceType": "Betriebliche Gesundheitsförderung"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Was bietet Andrea Lüdtke für Unternehmen an?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Andrea Lüdtke bietet betriebliche Gesundheitsförderung in Form von Faszienyoga, Stressmanagement und Online-Formaten – vor Ort oder remote. Einheiten dauern 30–45 Minuten und können als Einzel- oder Regelmäßig-Paket gebucht werden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie lange dauern die Einheiten für Unternehmen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die Einheiten dauern 30–45 Minuten und lassen sich flexibel in den Arbeitsalltag integrieren – vor Ort im Betrieb oder live online."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Für welche Unternehmensgrößen ist das BGF-Angebot geeignet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Das Angebot ist maßgeschneidert und richtet sich an Unternehmen jeder Größe – von kleinen Teams bis hin zu großen Organisationen. Referenzkunden sind u.a. Sparkasse Wetzlar, Landkreis Gießen und Pfeiffer Vacuum."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://andrea-luedtke.de/"},
+    {"@type": "ListItem", "position": 2, "name": "Für Unternehmen", "item": "https://andrea-luedtke.de/unternehmen.html"}
+  ]
+}
+</script>
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <header class="nav-wrapper scrolled" id="navbar">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="Logos/andrea_lüdtke_life_logo.png" alt="Andrea Lüdtke" class="nav-logo-img" />
+        <span class="logo-first">Andrea</span>
+        <span class="logo-last">Lüdtke</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#ueber-mich" class="nav-link">Über mich</a></li>
+        <li><a href="coaching.html" class="nav-link">Coaching</a></li>
+        <li><a href="kurse-workshops.html" class="nav-link">Kurse &amp; Workshops</a></li>
+        <li><a href="unternehmen.html" class="nav-link" style="color:var(--clr-forest-mid)">Unternehmen</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="index.html#kontakt" class="nav-link nav-cta">Kostenlose Anfrage</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <div class="page-banner-bg"></div>
+    <img src="images/unternehmen.jpg" alt="Betriebliche Gesundheitsförderung" class="page-banner-photo" />
+    <div class="page-banner-overlay"></div>
+    <div class="page-banner-content">
+      <h1>Fit im Job –<br /><em>gesunde Teams, starke Ergebnisse</em></h1>
+      <p class="banner-sub">Betriebliche Gesundheitsförderung, die wirklich wirkt: Weniger Fehltage, mehr Energie, fokussierte Teams – vor Ort oder online.</p>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="coaching section-padding" id="unternehmen">
+    <div class="container">
+      <div class="coaching-content">
+        <div class="coaching-image-col reveal-left">
+          <div class="coaching-image-frame">
+            <img src="images/unternehmen.jpg" alt="Workshop im Unternehmen" class="section-photo" loading="lazy" />
+            <div class="floating-badge">
+              <span>Nachhaltig</span>
+              <span>Wirksam</span>
+            </div>
+          </div>
+        </div>
+        <div class="coaching-text-col reveal-right">
+          <span class="section-tag">Betriebliche Gesundheit</span>
+          <h2 class="section-headline">Ihr Team verdient<br /><em>echte Energie</em></h2>
+          <div class="coaching-block">
+            <div class="coaching-icon">01</div>
+            <h3>Das Problem: Erschöpfte Teams kosten</h3>
+            <p>Rückenschmerzen, chronischer Stress, Konzentrationsprobleme – die stillen Kostentreiber in jedem Unternehmen. Sie führen zu Fehlzeiten, sinkender Produktivität und hoher Fluktuation. Die Ursache liegt oft im Körper.</p>
+          </div>
+          <div class="coaching-block">
+            <div class="coaching-icon">02</div>
+            <h3>Die Lösung: Körperkompetenz im Alltag</h3>
+            <p>Mit Faszienyoga, Stressmanagement und Selbstregulation lernen Ihre Mitarbeitenden, ihren Körper als Ressource zu nutzen. Praktisch, sofort umsetzbar – ohne großen Zeitaufwand.</p>
+          </div>
+          <div class="coaching-block">
+            <div class="coaching-icon">03</div>
+            <h3>Das Ergebnis: Leistung aus Kraft, nicht aus Druck</h3>
+            <p>Teams, die sich um sich selbst kümmern können, sind resilienter, fokussierter und engagierter. Eine Investition in Gesundheit ist eine Investition in Wachstum.</p>
+          </div>
+          <a href="index.html#kontakt" class="btn btn-primary mt-2">Unverbindlich anfragen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEISTUNGEN / CORP SERVICES -->
+  <section class="section-padding bg-warm">
+    <div class="container">
+      <div class="section-header centered reveal-up">
+        <h2 class="section-headline">Was ich für<br /><em>Ihr Unternehmen anbiete</em></h2>
+        <p class="section-intro">Individuell zugeschnitten auf Ihre Belegschaft – als einmaliger Workshop oder als fortlaufendes Programm.</p>
+      </div>
+      <div class="corp-services-grid">
+
+        <div class="corp-service-card reveal-up">
+          <div class="corp-service-icon" style="font-size:1.2rem;opacity:.65">✦</div>
+          <h3>Faszientraining im Betrieb</h3>
+          <p>Regelmäßige Einheiten im Büro oder Meetingraum: Ihre Mitarbeitenden lösen Verspannungen, steigern ihre Beweglichkeit und kehren mit neuer Energie an ihre Arbeitsplätze zurück.</p>
+          <ul class="corp-service-list">
+            <li><span style="color:#5288A0;margin-right:.4rem">✓</span>30–45 Minuten pro Einheit</li>
+            <li><span style="color:#5288A0;margin-right:.4rem">✓</span>Vor Ort oder live online</li>
+            <li><span style="color:#5288A0;margin-right:.4rem">✓</span>Einzel- oder Regelmäßig-Paket</li>
+          </ul>
+        </div>
+
+        <div class="corp-service-card reveal-up delay-1">
+          <div class="corp-service-icon" style="font-size:1.2rem;opacity:.65">✦</div>
+          <h3>Stressmanagement &amp; Selbstregulation</h3>
+          <p>Praktische Tools für Führungskräfte und Teams: Nervensystem regulieren, Stressmuster erkennen, Resilienz aufbauen. Als Vortrag, Workshop oder mehrteilige Reihe.</p>
+          <ul class="corp-service-list">
+            <li><span style="color:#5288A0;margin-right:.4rem">✓</span>Workshop 2–4 Stunden</li>
+            <li><span style="color:#5288A0;margin-right:.4rem">✓</span>Für Teams aller Größen</li>
+            <li><span style="color:#5288A0;margin-right:.4rem">✓</span>Mit konkreten Take-aways</li>
+          </ul>
+        </div>
+
+        <div class="corp-service-card reveal-up delay-2">
+          <div class="corp-service-icon" style="font-size:1.2rem;opacity:.65">✦</div>
+          <h3>Online-Format für verteilte Teams</h3>
+          <p>Remote-Arbeit bedeutet nicht weniger Körpereinsatz – im Gegenteil. Mit meinen Online-Formaten erreiche ich alle Mitarbeitenden, egal wo sie gerade arbeiten.</p>
+          <ul class="corp-service-list">
+            <li><span style="color:#5288A0;margin-right:.4rem">✓</span>Live-Videoformate</li>
+            <li><span style="color:#5288A0;margin-right:.4rem">✓</span>Aufgezeichnete Einheiten on demand</li>
+            <li><span style="color:#5288A0;margin-right:.4rem">✓</span>Flexible Integration in den Arbeitsalltag</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ZAHLEN -->
+  <section class="numbers-band section-padding">
+    <div class="container">
+      <div class="numbers-grid">
+        <div class="number-item reveal-up">
+          <div class="number-label">Die Teilnehmenden berichten von weniger Verspannungen nach 4 Wochen</div>
+        </div>
+        <div class="number-item reveal-up delay-1">
+          <div class="number-label">Weniger Fehlzeiten im Durchschnitt bei regelmäßigen BGM-Programmen</div>
+        </div>
+        <div class="number-item reveal-up delay-2">
+          <div class="number-label">Höhere Mitarbeiterbindung in Unternehmen mit gesundheitsfördernden Maßnahmen</div>
+        </div>
+        <div class="number-item reveal-up delay-3">
+          <div class="number-label">Maßgeschneidert auf Ihre Belegschaft und Unternehmenskultur</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS / ABLAUF -->
+  <section class="process-section section-padding" style="background:var(--clr-ivory-dark)">
+    <div class="container">
+      <div class="section-header centered reveal-up">
+        <h2 class="section-headline">Von der Anfrage<br /><em>zum laufenden Programm</em></h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step reveal-up">
+          <div class="step-number">01</div>
+          <div class="step-line"></div>
+          <h3>Kostenloses Gespräch</h3>
+          <p>Wir klären Ihre Bedürfnisse, Ziele und Rahmenbedingungen. Ich stelle mir vor, was für Ihr Team Sinn ergibt.</p>
+        </div>
+        <div class="process-step reveal-up delay-1">
+          <div class="step-number">02</div>
+          <div class="step-line"></div>
+          <h3>Maßgeschneidertes Konzept</h3>
+          <p>Ich entwickle ein individuelles Programm – mit Inhalten, Formaten und Frequenzen, die zu Ihrem Alltag passen.</p>
+        </div>
+        <div class="process-step reveal-up delay-2">
+          <div class="step-number">03</div>
+          <div class="step-line"></div>
+          <h3>Piloteinheit &amp; Feedback</h3>
+          <p>Wir starten mit einer Probe-Einheit. Ihr Team gibt Feedback – ich passe das Programm entsprechend an.</p>
+        </div>
+        <div class="process-step reveal-up delay-3">
+          <div class="step-number">04</div>
+          <div class="step-line"></div>
+          <h3>Regelmäßiges Programm</h3>
+          <p>Das Programm läuft – nachhaltig und messbar. Ich begleite Sie langfristig und entwickle die Inhalte weiter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES / WARUM ANDREA -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header centered reveal-up">
+        <span class="section-tag">Warum Andrea?</span>
+        <h2 class="section-headline">Kompetenz, die<br /><em>man spürt</em></h2>
+        <p class="section-intro">Ich kombiniere fundiertes Wissen über Faszien und Nervensystem mit praktischer Unternehmens-Erfahrung.</p>
+      </div>
+      <div class="coaching-values-grid">
+        <div class="coaching-value-card reveal-up">
+          <div class="value-num" style="font-size:1.2rem;opacity:.55">✦</div>
+          <h3>Zertifizierte Ausbildung</h3>
+          <p>Ausgebildete Faszienyoga-Trainerin, Life Coach-Ausbildung und kontinuierliche Weiterbildung im Bereich Nervensystem und Körperarbeit.</p>
+        </div>
+        <div class="coaching-value-card reveal-up delay-1">
+          <div class="value-num" style="font-size:1.2rem;opacity:.55">✦</div>
+          <h3>Unternehmenserfahrung</h3>
+          <p>Ich kenne die Arbeitswelt aus eigener Erfahrung. Meine Programme sind praxistauglich – reale Tools für echte Anforderungen.</p>
+        </div>
+        <div class="coaching-value-card reveal-up delay-2">
+          <div class="value-num" style="font-size:1.2rem;opacity:.55">✦</div>
+          <h3>Flexibles Format</h3>
+          <p>Ob 30-Minuten-Impulse, halbtägige Workshops oder fortlaufende Programme – ich passe mich Ihrem Zeitplan und Budget an.</p>
+        </div>
+        <div class="coaching-value-card reveal-up delay-3">
+          <div class="value-num" style="font-size:1.2rem;opacity:.55">✦</div>
+          <h3>Messbare Wirkung</h3>
+          <p>Ich arbeite mit Feedback-Schleifen und Wirkungsmessung, damit Sie den Mehrwert für Ihr Unternehmen klar erkennen können.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENT LOGOS TICKER -->
+  <section class="section-padding" style="background:#fff">
+    <div class="container">
+      <div class="section-header centered reveal-up" style="margin-bottom:2rem">
+        <h2 class="section-headline">Unternehmen, die<br /><em>auf mich setzen</em></h2>
+      </div>
+      <div class="logo-ticker-wrap" id="logoTickerSection">
+        <div class="logo-ticker">
+          <!-- Set 1 -->
+          <img src="Logos/2021 Logo DrachenGas_blue.png" alt="DrachenGas" loading="lazy" />
+          <img src="Logos/KEBA_Logo_hellesGRAU_mitSlogan+R_CMYK_print.jpg" alt="KEBA" loading="lazy" />
+          <img src="Logos/LOGO_Kubus_2022 mini.png" alt="Kubus" style="height:80px" loading="lazy" />
+          <img src="Logos/Logo ETL 04.22 4c.jpg" alt="ETL" style="height:80px" loading="lazy" />
+          <img src="Logos/Logo Landkreis Gießen_farbig.png" alt="Landkreis Gießen" style="height:100px" loading="lazy" />
+          <img src="Logos/Logo_4c_VBMH_links_ohne_URL_NEU.jpg" alt="VBMH" loading="lazy" />
+          <img src="Logos/Logo_praxisgmbh.gif" alt="Praxis GmbH" loading="lazy" />
+          <img src="Logos/Sparkasse Wetzlar.JPG" alt="Sparkasse Wetzlar" loading="lazy" />
+          <img src="Logos/Stadt Aßlar Logo.png" alt="Stadt Aßlar" loading="lazy" />
+          <img src="Logos/Verwaltungsgericht.JPG" alt="Verwaltungsgericht" loading="lazy" />
+          <img src="Logos/Zoll_Gießen.JPG" alt="Zoll Gießen" style="height:80px" loading="lazy" />
+          <img src="Logos/enwag_logo.png" alt="enwag" style="height:100px" loading="lazy" />
+          <img src="Logos/pfeiffer-vacuum-logo.png" alt="Pfeiffer Vacuum" loading="lazy" />
+          <img src="Logos/sonoro-logo.png" alt="sonoro" style="height:32px" loading="lazy" />
+          <img src="Logos/ldk_logo.png" alt="LdK" loading="lazy" />
+          <!-- Set 2 (Duplikat für nahtlosen Loop) -->
+          <img src="Logos/2021 Logo DrachenGas_blue.png" alt="DrachenGas" loading="lazy" />
+          <img src="Logos/KEBA_Logo_hellesGRAU_mitSlogan+R_CMYK_print.jpg" alt="KEBA" loading="lazy" />
+          <img src="Logos/LOGO_Kubus_2022 mini.png" alt="Kubus" style="height:80px" loading="lazy" />
+          <img src="Logos/Logo ETL 04.22 4c.jpg" alt="ETL" style="height:80px" loading="lazy" />
+          <img src="Logos/Logo Landkreis Gießen_farbig.png" alt="Landkreis Gießen" style="height:100px" loading="lazy" />
+          <img src="Logos/Logo_4c_VBMH_links_ohne_URL_NEU.jpg" alt="VBMH" loading="lazy" />
+          <img src="Logos/Logo_praxisgmbh.gif" alt="Praxis GmbH" loading="lazy" />
+          <img src="Logos/Sparkasse Wetzlar.JPG" alt="Sparkasse Wetzlar" loading="lazy" />
+          <img src="Logos/Stadt Aßlar Logo.png" alt="Stadt Aßlar" loading="lazy" />
+          <img src="Logos/Verwaltungsgericht.JPG" alt="Verwaltungsgericht" loading="lazy" />
+          <img src="Logos/Zoll_Gießen.JPG" alt="Zoll Gießen" style="height:80px" loading="lazy" />
+          <img src="Logos/enwag_logo.png" alt="enwag" style="height:100px" loading="lazy" />
+          <img src="Logos/pfeiffer-vacuum-logo.png" alt="Pfeiffer Vacuum" loading="lazy" />
+          <img src="Logos/sonoro-logo.png" alt="sonoro" style="height:32px" loading="lazy" />
+          <img src="Logos/ldk_logo.png" alt="LdK" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATEMENT -->
+  <section class="statement-band">
+    <div class="container">
+      <p class="statement-text reveal-up">
+        „Ein gesundes Team ist kein Luxus –<br /><em>es ist der entscheidende Wettbewerbsvorteil."</em>
+      </p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="untern-testimonials">
+    <div class="container">
+      <h2>Was Unternehmen sagen</h2>
+      <div class="untern-testi-grid">
+
+        <div class="untern-testi-item reveal-up">
+          <div class="testi-text">
+            „<strong>Es war wirklich toll!</strong> Alle Mitarbeiter <strong>waren super zufrieden mit den Ausführungen und den Übungen</strong> und sind immer <strong>mit sehr viel Freude</strong> zu den Kursen gegangen. Durch ihre fröhliche und sehr sympathische Art hat Fr. Lüdtke <strong>die Leute begeistert und mitgerissen.</strong> Sie ist auf <strong>alle individuellen Wünsche und Probleme eingegangen</strong>."
+          </div>
+          <div class="testi-author">Kristina Miller · Personalabteilung</div>
+          <img src="Logos/enwag_logo.png" alt="enwag" class="testi-logo testi-logo-enwag" style="height:56px;" loading="lazy" />
+        </div>
+
+        <div class="untern-testi-item reveal-up delay-1">
+          <div class="testi-text">
+            „Die Kollegen, die regelmäßig teilgenommen haben, hatten <strong>sehr viel Freude</strong> und konnten eine <strong>Verbesserung ihrer Vitalität</strong> feststellen. Vielen Dank für die <strong>tolle Atmosphäre</strong>, die Sie geschaffen haben."
+          </div>
+          <div class="testi-author">Fr. Schnaus · Personalleiterin</div>
+          <img src="Logos/2021 Logo DrachenGas_blue.png" alt="DrachenGas" class="testi-logo" style="height:26px;" loading="lazy" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="cta-band-inner reveal-up">
+      <h2>Bereit, in Ihr<br /><em>Team zu investieren?</em></h2>
+      <p>Lass uns in einem kostenlosen Gespräch herausfinden, was für Ihr Unternehmen am meisten Sinn ergibt.</p>
+      <a href="index.html#kontakt" class="btn btn-gold btn-large">Jetzt kostenlos anfragen</a>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-simple">
+    <div class="container">
+      <div class="newsletter-simple-inner reveal-up">
+        <p>Hier können Sie sich zu meinem Newsletter eintragen</p>
+        <button class="btn btn-primary" onclick="openNewsletterModal()">Newsletter abonnieren</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Andrea Lüdtke</div>
+          <p>Selbstregulation</p>
+          <div class="footer-social">
+            <a class="social-link" aria-label="Instagram" href="https://www.instagram.com/andrea.luedtke.life/" target="_blank" rel="noopener"><img src="Logos/Instagram_Logo.png" alt="Instagram" loading="lazy" /></a>
+            <a class="social-link" aria-label="Facebook" href="https://www.facebook.com/luedtkeandrea1" target="_blank" rel="noopener"><img src="Logos/facebook_logo.png" alt="Facebook" loading="lazy" /></a>
+            <a class="social-link" aria-label="YouTube" href="https://www.youtube.com/@andrea.luedtke" target="_blank" rel="noopener"><img src="Logos/Youtube Logo.png" alt="YouTube" loading="lazy" /></a>
+            <a class="social-link" aria-label="LinkedIn" href="https://www.linkedin.com/in/andrea-l%C3%BCdtke-life/" target="_blank" rel="noopener"><img src="Logos/Linkedin logo.png" alt="LinkedIn" loading="lazy" /></a>
+            <a class="social-link" aria-label="Pinterest" href="https://de.pinterest.com/andrealuedtke_innerrelease/" target="_blank" rel="noopener"><img src="Logos/Pinterest Logo.png" alt="Pinterest" loading="lazy" /></a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html#ueber-mich">Über mich</a></li>
+            <li><a href="coaching.html">Coaching</a></li>
+            <li><a href="koerperklar.html">Körperklar</a></li>
+            <li><a href="unternehmen.html">Unternehmen</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#" onclick="openNewsletterModal();return false;">Newsletter</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Angebote</h4>
+          <ul>
+            <li><a href="coaching.html">1:1 Coaching</a></li>
+            <li><a href="koerperklar.html">Körperklar 7-Tage-Reset</a></li>
+            <li><a href="faszienyoga-wetzlar.html">Faszienyoga Wetzlar</a></li>
+            <li><a href="faszienyoga-online.html">Faszienyoga Online</a></li>
+            <li><a href="index.html#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Kontakt</h4>
+          <p>+49 178 3145766</p>
+          <p>info@andrea-luedtke.de</p>
+          <p>Aßlar, Hessen</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Andrea Lüdtke. Alle Rechte vorbehalten.</p>
+        <div class="footer-legal">
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+          <a href="agb.html">AGB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Logo ticker: auto-build from images in Logos/ folder
+    // Falls Logos vorhanden sind, hier manuell eintragen:
+    const logos = [
+      // { src: 'Logos/firmaname.png', alt: 'Firmaname' },
+    ];
+    if (logos.length > 0) {
+      const section = document.getElementById('logoTickerSection');
+      const ticker = document.createElement('div');
+      ticker.className = 'logo-ticker-wrap';
+      const track = document.createElement('div');
+      track.className = 'logo-ticker';
+      // Double for seamless loop
+      [...logos, ...logos].forEach(l => {
+        const img = document.createElement('img');
+        img.src = l.src; img.alt = l.alt;
+        track.appendChild(img);
+      });
+      ticker.appendChild(track);
+      section.innerHTML = '';
+      section.appendChild(ticker);
+    }
+  </script>
+</body>
+</html>
