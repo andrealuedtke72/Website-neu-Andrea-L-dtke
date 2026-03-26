@@ -43,7 +43,7 @@
       gap: 3rem;
       align-items: center;
       width: max-content;
-      animation: ticker 14s linear infinite;
+      animation: ticker 8s linear infinite;
     }
     .logo-ticker:hover { animation-play-state: paused; }
     @keyframes ticker {
@@ -53,11 +53,9 @@
     .logo-ticker img {
       height: 48px;
       width: auto;
-      filter: grayscale(1) opacity(.6);
-      transition: filter .3s;
+      filter: grayscale(0) opacity(1);
       flex-shrink: 0;
     }
-    .logo-ticker img:hover { filter: grayscale(0) opacity(1); }
     /* Fallback when no logos yet */
     .logos-empty-note {
       text-align: center;
