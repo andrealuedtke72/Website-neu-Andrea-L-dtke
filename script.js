@@ -76,7 +76,15 @@
   const toggle = document.getElementById('navToggle');
   const links  = document.getElementById('navLinks');
 
-  // Scroll state
+  // Mobile: Hintergrund per Inline-Style erzwingen (schlägt jede CSS-Regel)
+  function forceMobileNavBg() {
+    if (window.innerWidth <= 1100) {
+      navbar.style.setProperty('background', '#faf7f0', 'important');
+      navbar.style.setProperty('background-color', '#faf7f0', 'important');
+    }
+  }
+
+  // Scroll state + Mobile-BG kombiniert
   let lastScroll = 0;
   window.addEventListener('scroll', () => {
     const y = window.scrollY;
@@ -86,15 +94,19 @@
       navbar.classList.remove('scrolled');
     }
     lastScroll = y;
+    forceMobileNavBg();
   }, { passive: true });
 
-  // Mobile toggle
+  // Beim Laden direkt anwenden
+  forceMobileNavBg();
+
   if (toggle && links) {
     toggle.addEventListener('click', () => {
       links.classList.toggle('open');
       const isOpen = links.classList.contains('open');
       navbar.classList.toggle('menu-open', isOpen);
       toggle.setAttribute('aria-expanded', isOpen);
+      setNavBg(true);
     });
 
     // Close on link click
@@ -105,6 +117,9 @@
       });
     });
   }
+
+  // Set on initial load too
+  setNavBg(true);
 
   // Dropdown: click-to-toggle on mobile / touch devices
   document.querySelectorAll('.has-dropdown').forEach(item => {
