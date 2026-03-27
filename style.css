@@ -1224,7 +1224,7 @@ label {
   color: var(--clr-forest);
 }
 
-input, select, textarea {
+input:not([type="checkbox"]):not([type="radio"]), select, textarea {
   padding: .85rem 1.1rem;
   border: 1.5px solid var(--clr-border);
   border-radius: var(--radius-sm);
@@ -1236,7 +1236,16 @@ input, select, textarea {
   appearance: none;
 }
 
-input:focus, select:focus, textarea:focus {
+input[type="checkbox"], input[type="radio"] {
+  appearance: auto;
+  -webkit-appearance: auto;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):focus, select:focus, textarea:focus {
   outline: none;
   border-color: var(--clr-forest-light);
   box-shadow: 0 0 0 3px rgba(62,122,94,.12);
