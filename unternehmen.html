@@ -118,45 +118,53 @@
     /* ── Banner-Foto tiefer positionieren (Gesicht sichtbar) ── */
     .page-banner-photo { object-position: center 15% !important; }
 
-    /* ── Zahlen-Karten: markanter Stil ── */
-    .numbers-band { background: var(--clr-ivory-dark) !important; }
-    .numbers-band .numbers-grid { gap: 1.5rem; align-items: stretch; }
+    /* ── Zahlen-Band: markanter Stil ohne Kacheln ── */
+    .numbers-band {
+      background: var(--clr-forest) !important;
+    }
+    .numbers-band .numbers-grid {
+      gap: 0;
+      align-items: stretch;
+      border-top: 1px solid rgba(255,255,255,.15);
+    }
     .numbers-band .number-item {
-      background: #fff;
-      border-radius: 12px;
-      border-left: 4px solid var(--clr-forest-mid);
-      box-shadow: 0 4px 24px rgba(61,109,135,.13);
-      padding: 1.8rem 1.6rem 1.6rem !important;
+      padding: 2rem 2rem 1.8rem !important;
       text-align: left !important;
+      border-bottom: 1px solid rgba(255,255,255,.15);
+      border-right: 1px solid rgba(255,255,255,.15);
       display: flex;
       flex-direction: column;
-      position: relative;
+      gap: .8rem;
+    }
+    .numbers-band .number-item:nth-child(4n) {
+      border-right: none;
     }
     .numbers-band .number-item::before {
-      content: '❝';
-      font-size: 2.2rem;
-      color: var(--clr-forest-light);
-      line-height: 1;
-      margin-bottom: .6rem;
+      content: '';
       display: block;
+      width: 2.5rem;
+      height: 3px;
+      background: var(--clr-gold);
+      border-radius: 2px;
     }
     .numbers-band .number-label {
       font-family: var(--font-ui);
-      font-size: clamp(.92rem, 1.4vw, 1.05rem);
+      font-size: clamp(.95rem, 1.4vw, 1.08rem);
       font-weight: 600;
-      color: var(--clr-forest);
+      color: #fff;
       line-height: 1.6;
     }
 
     @media (max-width: 768px) {
       .numbers-band .numbers-grid { grid-template-columns: 1fr 1fr !important; }
-      .numbers-band .number-item { padding: 1.4rem 1.2rem 1.2rem !important; }
+      .numbers-band .number-item { padding: 1.6rem 1.4rem 1.4rem !important; border-right: 1px solid rgba(255,255,255,.15) !important; }
+      .numbers-band .number-item:nth-child(2n) { border-right: none !important; }
     }
     @media (max-width: 480px) {
       .corp-services-grid { grid-template-columns: 1fr !important; }
       .process-steps-corp { grid-template-columns: 1fr !important; }
       .numbers-band .numbers-grid { grid-template-columns: 1fr !important; }
-      .numbers-band .number-item { padding: 1.2rem 1rem 1rem !important; }
+      .numbers-band .number-item { padding: 1.4rem 1.2rem !important; border-right: none !important; }
       .logo-ticker-wrap { padding: 1rem 0; }
       .cta-band { padding: 2rem 1rem !important; }
       .coaching-block { padding: .75rem 0 !important; }
