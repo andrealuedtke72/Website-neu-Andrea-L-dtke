@@ -1383,16 +1383,21 @@ textarea { resize: vertical; min-height: 110px; }
 }
 
 @media (max-width: 1100px) {
-  /* FIX: Nav immer mit vollständig solidem Hintergrund auf Mobile */
-  .nav-wrapper {
+  /* FIX: Nav immer mit solidem Hintergrund – beide Zustände abdecken */
+  .nav-wrapper,
+  .nav-wrapper.scrolled {
     background-color: #faf7f0 !important;
     background: #faf7f0 !important;
+    backdrop-filter: none !important;
     padding: .85rem 0 !important;
     box-shadow: 0 1px 40px rgba(82,136,160,.12) !important;
   }
-  .nav-wrapper .nav-toggle span { background: var(--clr-forest) !important; }
-  .nav-wrapper .nav-logo { color: var(--clr-forest) !important; }
-  .nav-wrapper .logo-last { color: var(--clr-gold-dark) !important; }
+  .nav-wrapper .nav-toggle span,
+  .nav-wrapper.scrolled .nav-toggle span { background: var(--clr-forest) !important; }
+  .nav-wrapper .nav-logo,
+  .nav-wrapper.scrolled .nav-logo { color: var(--clr-forest) !important; }
+  .nav-wrapper .logo-last,
+  .nav-wrapper.scrolled .logo-last { color: var(--clr-gold-dark) !important; }
 
   .nav-links {
     position: fixed;

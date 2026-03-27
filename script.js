@@ -76,16 +76,7 @@
   const toggle = document.getElementById('navToggle');
   const links  = document.getElementById('navLinks');
 
-  // Mobile: Hintergrund per Inline-Style erzwingen (schlägt jede CSS-Regel)
-  function forceMobileNavBg() {
-    if (window.innerWidth <= 1100) {
-      navbar.style.setProperty('background', '#faf7f0', 'important');
-      navbar.style.setProperty('background-color', '#faf7f0', 'important');
-    }
-  }
-
-  // Scroll state + Mobile-BG kombiniert
-  let lastScroll = 0;
+  // Scroll state
   window.addEventListener('scroll', () => {
     const y = window.scrollY;
     if (y > 60) {
@@ -93,12 +84,7 @@
     } else {
       navbar.classList.remove('scrolled');
     }
-    lastScroll = y;
-    forceMobileNavBg();
   }, { passive: true });
-
-  // Beim Laden direkt anwenden
-  forceMobileNavBg();
 
   if (toggle && links) {
     toggle.addEventListener('click', () => {
@@ -106,7 +92,6 @@
       const isOpen = links.classList.contains('open');
       navbar.classList.toggle('menu-open', isOpen);
       toggle.setAttribute('aria-expanded', isOpen);
-      forceMobileNavBg();
     });
 
     // Close on link click
