@@ -92,13 +92,16 @@
   if (toggle && links) {
     toggle.addEventListener('click', () => {
       links.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', links.classList.contains('open'));
+      const isOpen = links.classList.contains('open');
+      navbar.classList.toggle('menu-open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen);
     });
 
     // Close on link click
     links.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => {
         links.classList.remove('open');
+        navbar.classList.remove('menu-open');
       });
     });
   }

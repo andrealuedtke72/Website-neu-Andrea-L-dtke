@@ -1390,6 +1390,11 @@ textarea { resize: vertical; min-height: 110px; }
     padding: .85rem 0 !important;
     box-shadow: 0 1px 40px rgba(82,136,160,.12) !important;
   }
+  /* Wenn Menü aufgeklappt: absolut solider Hintergrund */
+  .nav-wrapper.menu-open {
+    background: rgba(250,247,240,1) !important;
+    box-shadow: 0 2px 20px rgba(61,109,135,.18) !important;
+  }
   .nav-wrapper .nav-toggle span { background: var(--clr-forest) !important; }
   .nav-wrapper .nav-logo { color: var(--clr-forest) !important; }
   .nav-wrapper .logo-last { color: var(--clr-gold-dark) !important; }
