@@ -106,7 +106,7 @@
       const isOpen = links.classList.contains('open');
       navbar.classList.toggle('menu-open', isOpen);
       toggle.setAttribute('aria-expanded', isOpen);
-      setNavBg(true);
+      forceMobileNavBg();
     });
 
     // Close on link click
@@ -117,9 +117,6 @@
       });
     });
   }
-
-  // Set on initial load too
-  setNavBg(true);
 
   // Dropdown: click-to-toggle on mobile / touch devices
   document.querySelectorAll('.has-dropdown').forEach(item => {
