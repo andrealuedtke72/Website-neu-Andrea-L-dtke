@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "website",
+      "runtimeExecutable": "/usr/bin/perl",
+      "runtimeArgs": ["server.pl"],
+      "port": 8080
+    }
+  ]
+}

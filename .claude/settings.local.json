@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git config:*)",
+      "Bash(where gh:*)",
+      "Bash(git credential-manager:*)",
+      "Bash(gh api:*)",
+      "Bash(gh auth:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where node:*)",
+      "Bash(where npm:*)",
+      "Bash(where npx:*)",
+      "Bash(where python:*)",
+      "Bash(where py:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:andrea-luedtke.de)",
+      "Bash(npx --version)",
+      "Bash(ruby --version)",
+      "Bash(php --version)",
+      "Bash(perl --version)",
+      "Bash(where python.exe)",
+      "Read(//c/Windows/**)",
+      "Read(//c/Users/49157/AppData/Local/Programs/**)",
+      "Bash(/c/Users/49157/AppData/Local/Microsoft/WindowsApps/python.exe --version)",
+      "Bash(perl -e \"print ''ok''\")",
+      "Bash(cmd.exe /c \"where perl\")"
+    ]
+  }
+}
