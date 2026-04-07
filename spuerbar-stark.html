@@ -54,14 +54,38 @@
   }
   .p2p-hero h1 {
     font-family: var(--font-display);
-    font-size: clamp(2.4rem, 7vw, 5rem);
+    font-size: clamp(2.2rem, 6vw, 4rem);
     font-weight: 500;
     color: var(--clr-text);
-    line-height: 1.1;
+    line-height: 1.15;
     margin-bottom: 1.25rem;
     letter-spacing: -.02em;
   }
-  .p2p-hero h1 em { color: var(--clr-forest-mid); font-style: italic; }
+  .p2p-hero h1 em {
+    color: var(--clr-forest-mid);
+    font-style: italic;
+    display: block;
+    font-size: 0.88em;
+    white-space: nowrap;
+  }
+
+  /* ── Wochen-Header mit Foto ── */
+  .p2p-weeks-header {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
+  .p2p-weeks-header-img img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: var(--radius-md);
+    box-shadow: 0 8px 36px rgba(82,136,160,.18);
+    display: block;
+  }
   .p2p-hero-sub {
     font-family: var(--font-display);
     font-size: clamp(1.1rem, 2.5vw, 1.5rem);
@@ -353,6 +377,8 @@
     .p2p-about-grid { grid-template-columns: 1fr; }
     .p2p-about-img img { height: 300px; }
     .p2p-beta-box { padding: 2rem 1.25rem; }
+    .p2p-weeks-header { grid-template-columns: 1fr; }
+    .p2p-weeks-header-img img { height: 260px; }
   }
   @media (max-width: 480px) {
     .p2p-hero { min-height: 100svh; }
@@ -395,8 +421,10 @@
     <div class="p2p-hero-content">
       <span class="p2p-tag">6-Wochen Kleingruppen-Programm · Online · ab 06. Mai</span>
       <h1>Spürbar stark –<br /><em>von Daueranspannung</em><br /><em>zu dir und deiner Stärke</em></h1>
-      <p class="p2p-hero-sub">Löse dich von inneren Stressoren und negativen Glaubenssätzen –<br />und lebe endlich nach deinen eigenen Werten.</p>
-      <p style="color:var(--clr-text-mid);font-size:1rem;line-height:1.75;max-width:580px;margin:0 auto 2.5rem"><strong>Schluss damit, in alten Mustern festzustecken und nach den Erwartungen anderer zu leben.</strong><br /><br />In 6 intensiven Wochen:<br />Begleite ich dich dabei, deine inneren Stressoren zu erkennen, deinen Selbstwert zu stärken und ein Leben zu gestalten, das wirklich zu dir passt.</p>
+      <p class="p2p-hero-sub">Löse dich von inneren Stressoren und negativen Glaubenssätzen –<br />und lebe endlich nach deinen eigenen Werten.<br /><span style="font-size:.9em;color:var(--clr-forest-mid)">Mit Faszienyoga und Mentalcoaching — Körper und Geist gemeinsam.</span></p>
+      <p style="color:var(--clr-text-mid);font-size:1rem;line-height:1.75;max-width:580px;margin:0 auto 1rem"><strong>Schluss damit, in alten Mustern festzustecken und nach den Erwartungen anderer zu leben.</strong></p>
+      <p style="font-family:var(--font-display);font-size:clamp(1.15rem,2.2vw,1.55rem);font-weight:500;color:var(--clr-forest);max-width:580px;margin:0 auto 1rem;line-height:1.4">In 6 intensiven Wochen –<br />bis 06. Mai 2026:</p>
+      <p style="color:var(--clr-text-mid);font-size:1rem;line-height:1.75;max-width:580px;margin:0 auto 2.5rem">Begleite ich dich dabei, deine inneren Stressoren zu erkennen, deinen Selbstwert zu stärken und ein Leben zu gestalten, das wirklich zu dir passt.</p>
       <div class="p2p-hero-meta">
         <span><span class="dot"></span>Max. 6 Teilnehmerinnen</span>
         <span><span class="dot"></span>100 % online</span>
@@ -465,9 +493,16 @@
   ══════════════════════════════════════════════ -->
   <section class="p2p-section p2p-section--ivory">
     <div class="p2p-container">
-      <span class="p2p-tag-label">Der Weg</span>
-      <h2 class="p2p-headline">6 Wochen –<br /><em>von innen nach außen</em></h2>
-      <p class="p2p-intro">Jede Woche ist ein gezielter Schritt. Wir arbeiten tief, aber liebevoll – mit dir, nicht gegen dich.</p>
+      <div class="p2p-weeks-header">
+        <div class="p2p-weeks-header-text">
+          <span class="p2p-tag-label">Der Weg</span>
+          <h2 class="p2p-headline">6 Wochen –<br /><em>von innen nach außen</em></h2>
+          <p class="p2p-intro">Jede Woche ist ein gezielter Schritt. Wir arbeiten tief, aber liebevoll – mit dir, nicht gegen dich.</p>
+        </div>
+        <div class="p2p-weeks-header-img reveal-up">
+          <img src="images/Andrea_mit_Lavendel.jpg" alt="Andrea Lüdtke mit Lavendel" loading="lazy" />
+        </div>
+      </div>
       <div class="p2p-weeks">
         <div class="p2p-week reveal-up">
           <div class="p2p-week-num">01</div>
