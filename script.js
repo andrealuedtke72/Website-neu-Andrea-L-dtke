@@ -642,6 +642,13 @@ function openBookingModal(btn) {
   document.getElementById('cookieDecline').addEventListener('click', function() { closeBanner('declined'); });
 })();
 
+// Cookie-Einstellungen zurücksetzen (wird über Footer-Link aufgerufen)
+function resetCookieConsent() {
+  try { localStorage.removeItem('al_cookie_consent'); } catch(e) {}
+  try { sessionStorage.removeItem('al_cookie_consent'); } catch(e) {}
+  location.reload();
+}
+
 
 /* =====================================================
    NEWSLETTER MODAL

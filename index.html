@@ -519,12 +519,9 @@
               <label for="nachricht">Nachricht *</label>
               <textarea id="nachricht" name="nachricht" rows="5" placeholder="Erzähl mir kurz, wo du gerade stehst und was du dir wünschst…" required></textarea>
             </div>
-            <div class="form-group" style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:1.25rem">
-              <input type="checkbox" id="privacy-consent" name="privacy" required style="margin-top:.25rem;flex-shrink:0;width:16px;height:16px;accent-color:var(--clr-forest-mid)" />
-              <label for="privacy-consent" style="font-size:.85rem;color:var(--clr-text-mid);line-height:1.5;cursor:pointer">
-                Ich habe die <a href="datenschutz.html" target="_blank" style="color:var(--clr-forest-mid)">Datenschutzerklärung</a> gelesen und bin damit einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage gespeichert und verwendet werden. *
-              </label>
-            </div>
+            <p style="font-size:.8rem;color:var(--clr-text-light);margin-bottom:1rem;line-height:1.5">
+              Mit dem Absenden werden deine Angaben zur Bearbeitung deiner Anfrage verarbeitet (Art. 6 Abs. 1 lit. f DSGVO). → <a href="datenschutz.html" target="_blank" style="color:var(--clr-forest-mid)">Datenschutzerklärung</a>
+            </p>
             <button type="submit" class="btn btn-primary btn-full" id="contactSubmit">Nachricht senden</button>
             <div class="form-success" id="formSuccess" style="display:none">
               ✓ Danke für deine Nachricht! Ich melde mich innerhalb von 24 Stunden.
@@ -597,6 +594,7 @@
           <a href="impressum.html">Impressum</a>
           <a href="datenschutz.html">Datenschutz</a>
           <a href="agb.html">AGB</a>
+          <a href="#" onclick="resetCookieConsent();return false;">Cookie-Einstellungen</a>
         </div>
       </div>
     </div>
