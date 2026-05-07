@@ -483,12 +483,6 @@
         </div>
         <div class="kontakt-form-wrap reveal-right">
           <form class="kontakt-form" id="contactForm" novalidate>
-            <!-- Web3Forms -->
-            <input type="hidden" name="access_key" value="c636ff5e-ad19-427c-8848-31784ee47f02" />
-            <input type="hidden" name="subject" value="Neue Kontaktanfrage – andrea-luedtke.de" />
-            <input type="hidden" name="from_name" value="Website Andrea Lüdtke" />
-            <!-- Honeypot Spam-Schutz (unsichtbar für echte Besucher) -->
-            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
 
             <div class="form-row">
               <div class="form-group">
@@ -615,13 +609,13 @@
       const data = Object.fromEntries(new FormData(this));
 
       try {
-        const res  = await fetch('https://api.web3forms.com/submit', {
+        const res  = await fetch('https://formspree.io/f/mwvynkjd', {
           method:  'POST',
           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
           body:    JSON.stringify(data)
         });
         const json = await res.json();
-        if (json.success) {
+        if (res.ok) {
           successEl.style.display = 'block';
           this.reset();
         } else {
