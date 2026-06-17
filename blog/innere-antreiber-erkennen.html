@@ -35,10 +35,19 @@
       padding: .3rem .9rem; border-radius: 99px; margin-bottom: 1rem;
     }
     .article-hero-img {
-      width: 100%; max-height: 440px; object-fit: cover;
+      width: 100%; max-height: 440px; object-fit: cover; object-position: center top;
       border-radius: var(--radius-md); margin-bottom: 3rem;
       box-shadow: 0 8px 40px rgba(82,136,160,.15);
     }
+    .toc-box {
+      background: var(--clr-pale-blue); border-radius: var(--radius-md);
+      padding: 1.75rem 2rem; margin: 2rem 0 2.5rem;
+    }
+    .toc-box p { font-family: var(--font-ui); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--clr-forest-mid); margin-bottom: .75rem; font-weight: 600; }
+    .toc-box ol { margin: 0; padding-left: 1.4rem; }
+    .toc-box li { margin-bottom: .4rem; font-size: .95rem; }
+    .toc-box a { color: var(--clr-forest-mid); text-decoration: none; }
+    .toc-box a:hover { text-decoration: underline; }
     .article-date { font-size: .85rem; color: var(--clr-text-light); margin-bottom: 2rem; }
     h1.article-title {
       font-family: var(--font-display); font-size: clamp(1.9rem, 4vw, 2.8rem);
@@ -144,6 +153,8 @@
       <h1 class="article-title">Der innere Chef,<br />den du nie eingestellt hast</h1>
       <p class="article-date">Juni 2026 · von Andrea Lüdtke</p>
 
+      <img src="../images/about-new.jpg" alt="Der innere Chef, den du nie eingestellt hast" class="article-hero-img" />
+
       <div class="article-body">
 
         <p>Kennst du diese Stimme, die sagt: „Das könntest du noch besser machen." Oder: „Hast du auch wirklich alles bedacht?" Die, die dich abends nicht schlafen lässt, weil irgendetwas noch nicht perfekt genug war.</p>
@@ -154,9 +165,22 @@
 
         <p>In diesem Artikel erfährst du, was die 5 Antreiber sind, wie du deinen eigenen erkennst – und was du konkret tun kannst, damit sie nicht mehr das Steuer übernehmen.</p>
 
+        <div class="toc-box">
+          <p>Inhalt</p>
+          <ol>
+            <li><a href="#antreiber-blick">Die 5 inneren Antreiber auf einen Blick</a></li>
+            <li><a href="#was-sind-antreiber">Was sind innere Antreiber?</a></li>
+            <li><a href="#antreiber-vs-ehrgeiz">Was unterscheidet innere Antreiber von normalem Ehrgeiz?</a></li>
+            <li><a href="#sei-perfekt">Warum ich mich mit dem Antreiber „Sei perfekt!" besonders gut auskenne</a></li>
+            <li><a href="#fuer-wen">Für wen ist die Arbeit mit inneren Antreibern geeignet?</a></li>
+            <li><a href="#ziel">Das Ziel: Antreiber erkennen und entspannen</a></li>
+            <li><a href="#wie-arbeiten">Wie du mit mir an deinen inneren Antreibern arbeiten kannst</a></li>
+          </ol>
+        </div>
+
         <hr />
 
-        <h2>Die 5 inneren Antreiber auf einen Blick</h2>
+        <h2 id="antreiber-blick">Die 5 inneren Antreiber auf einen Blick</h2>
 
         <ul class="checklist">
           <li><strong>Sei perfekt!</strong> – Hohe Ansprüche, schwer loszulassen, selten wirklich zufrieden</li>
@@ -168,7 +192,7 @@
 
         <hr />
 
-        <h2>Was sind innere Antreiber?</h2>
+        <h2 id="was-sind-antreiber">Was sind innere Antreiber?</h2>
 
         <p>Innere Antreiber sind unbewusste Verhaltensmuster, die beschreiben, unter welcher „Bedingung" wir uns für wertvoll oder liebenswert halten. Das Konzept stammt vom Psychologen <strong>Taibi Kahler</strong>, der in den 1970er Jahren fünf solcher Antreiber beschrieb – heute ein zentraler Bestandteil der Transaktionsanalyse.</p>
 
@@ -205,7 +229,7 @@
 
         <hr />
 
-        <h2>Was unterscheidet innere Antreiber von normalem Ehrgeiz?</h2>
+        <h2 id="antreiber-vs-ehrgeiz">Was unterscheidet innere Antreiber von normalem Ehrgeiz?</h2>
 
         <p>Das ist eine Frage, die ich häufig höre – und die ich selbst lange gestellt habe. Schließlich ist es doch gut, wenn man hohe Ansprüche hat, oder?</p>
 
@@ -219,7 +243,7 @@
 
         <hr />
 
-        <h2>Warum ich mich mit dem Antreiber „Sei perfekt!" besonders gut auskenne</h2>
+        <h2 id="sei-perfekt">Warum ich mich mit dem Antreiber „Sei perfekt!" besonders gut auskenne</h2>
 
         <p>Ich erinnere mich noch gut an das Gefühl: Ein Projekt abgeben, einen Text veröffentlichen, ein Gespräch führen – und sofort danach läuft ein innerer Film ab. Aber nicht der, der fragt „was war gut?", sondern der, der sucht: Was hätte besser sein können?</p>
 
@@ -233,7 +257,7 @@
 
         <hr />
 
-        <h2>Für wen ist die Arbeit mit inneren Antreibern geeignet?</h2>
+        <h2 id="fuer-wen">Für wen ist die Arbeit mit inneren Antreibern geeignet?</h2>
 
         <p>Die kurze Antwort: für alle, die das Gefühl kennen, nie wirklich anzukommen – egal, wie viel sie leisten.</p>
 
@@ -249,7 +273,7 @@
 
         <hr />
 
-        <h2>Das Ziel: Antreiber erkennen und entspannen</h2>
+        <h2 id="ziel">Das Ziel: Antreiber erkennen und entspannen</h2>
 
         <p>Innere Antreiber zu erkennen bedeutet nicht, sie loszuwerden. Es bedeutet, sie nicht mehr automatisch das Steuer übernehmen zu lassen.</p>
 
@@ -277,7 +301,7 @@
 
         <hr />
 
-        <h2>Wie du mit mir an deinen inneren Antreibern arbeiten kannst</h2>
+        <h2 id="wie-arbeiten">Wie du mit mir an deinen inneren Antreibern arbeiten kannst</h2>
 
         <p>Im Coaching <strong>„Spürbar stark – von Daueranspannung zu dir und deiner Stärke"</strong> arbeiten wir genau damit: Wir schauen, welche inneren Muster dich bremsen – und wie du wieder in deine eigene Kraft zurückfindest. Nicht durch Überwindung, sondern durch Verständnis, Körpergefühl und gezieltes Loslassen.</p>
 
