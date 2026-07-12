@@ -280,7 +280,7 @@
       <div class="modal-details" id="modalDetails"></div>
       <div class="modal-actions">
         <a href="#" class="modal-btn-primary" id="modalBookLink" target="_blank" rel="noopener">Direkt online buchen</a>
-        <a href="index.html#kontakt" class="modal-btn-secondary">📩 Buchungsanfrage per Formular</a>
+        <a href="index.html#kontakt" class="modal-btn-secondary" id="modalInquiryLink">📩 Buchungsanfrage per Formular</a>
       </div>
       <p class="modal-cancel-note">Kostenlose Stornierung bis 7 Tage vor Kursbeginn.</p>
     </div>
@@ -421,25 +421,5 @@
   </footer>
 
   <script src="script.js"></script>
-  <script>
-    function openBookingModal(btn) {
-      document.getElementById('modalKursName').textContent = btn.dataset.kurs;
-      document.getElementById('modalTitle').textContent = 'Buchung: ' + btn.dataset.kurs;
-      document.getElementById('modalDetails').innerHTML = btn.dataset.info.split('|').map(s => '<p>' + s.trim() + '</p>').join('');
-      document.getElementById('modalBookLink').href = btn.dataset.url;
-      document.getElementById('bookingModal').classList.add('open');
-      document.body.style.overflow = 'hidden';
-    }
-    document.getElementById('modalClose').addEventListener('click', () => {
-      document.getElementById('bookingModal').classList.remove('open');
-      document.body.style.overflow = '';
-    });
-    document.getElementById('bookingModal').addEventListener('click', (e) => {
-      if (e.target === document.getElementById('bookingModal')) {
-        document.getElementById('bookingModal').classList.remove('open');
-        document.body.style.overflow = '';
-      }
-    });
-  </script>
 </body>
 </html>
