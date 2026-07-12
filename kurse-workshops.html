@@ -427,16 +427,16 @@
       document.getElementById('modalTitle').textContent = 'Buchung: ' + btn.dataset.kurs;
       document.getElementById('modalDetails').innerHTML = btn.dataset.info.split('|').map(s => '<p>' + s.trim() + '</p>').join('');
       document.getElementById('modalBookLink').href = btn.dataset.url;
-      document.getElementById('bookingModal').classList.add('active');
+      document.getElementById('bookingModal').classList.add('open');
       document.body.style.overflow = 'hidden';
     }
     document.getElementById('modalClose').addEventListener('click', () => {
-      document.getElementById('bookingModal').classList.remove('active');
+      document.getElementById('bookingModal').classList.remove('open');
       document.body.style.overflow = '';
     });
     document.getElementById('bookingModal').addEventListener('click', (e) => {
       if (e.target === document.getElementById('bookingModal')) {
-        document.getElementById('bookingModal').classList.remove('active');
+        document.getElementById('bookingModal').classList.remove('open');
         document.body.style.overflow = '';
       }
     });
