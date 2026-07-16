@@ -125,16 +125,19 @@
         <span class="logo-first">Andrea</span>
         <span class="logo-last">Lüdtke</span>
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-mobile-actions">
+        <a href="#" class="nav-link nav-cta nav-cta-topbar" onclick="openNewsletterModal();return false;">Newsletter</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
       <ul class="nav-links" id="navLinks">
         <li><a href="#ueber-mich" class="nav-link">Über mich</a></li>
         <li><a href="coaching.html" class="nav-link">Coaching</a></li>
         <li><a href="kurse-workshops.html" class="nav-link">Kurse &amp; Workshops</a></li>
         <li><a href="unternehmen.html" class="nav-link">Unternehmen</a></li>
         <li><a href="blog.html" class="nav-link">Blog</a></li>
-        <li><a href="#" class="nav-link nav-cta" onclick="openNewsletterModal();return false;">Newsletter abonnieren</a></li>
+        <li class="nav-cta-item"><a href="#" class="nav-link nav-cta" onclick="openNewsletterModal();return false;">Newsletter abonnieren</a></li>
       </ul>
     </nav>
   </header>
