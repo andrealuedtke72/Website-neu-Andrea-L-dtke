@@ -23,6 +23,16 @@
   <style>
     #coaching .coaching-block { margin-bottom: 0.75rem !important; padding-bottom: 0.75rem !important; }
     #coaching .btn.mt-2 { margin-top: 0.5rem !important; }
+    #angebote .angebote-cards { grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    #angebote .angebote-card-img { height: 210px; }
+    #angebote .angebote-card-body { padding: 2.25rem; }
+    #angebote .angebote-card-body h3 { font-size: 1.55rem; }
+    @media (max-width: 960px) {
+      #angebote .angebote-cards { grid-template-columns: repeat(2, 1fr) !important; }
+    }
+    @media (max-width: 600px) {
+      #angebote .angebote-cards { grid-template-columns: 1fr !important; }
+    }
   </style>
   <script type="application/ld+json">
 {
@@ -252,8 +262,8 @@
     <div class="container">
       <div class="section-header centered reveal-up" style="margin-bottom:3.5rem">
         <span class="section-tag">Angebote</span>
-        <h2 class="section-headline">Vier Wege zu<br /><em>mehr Leichtigkeit</em></h2>
-        <p class="section-intro">Von intensiver 1:1-Begleitung über Gruppenworkshops bis zum kompakten Online-Programm – finde das Angebot, das zu dir und deinem Leben passt.</p>
+        <h2 class="section-headline">Drei Wege zu<br /><em>mehr Leichtigkeit</em></h2>
+        <p class="section-intro">Von intensiver 1:1-Begleitung über Gruppenworkshops bis zur betrieblichen Gesundheitsförderung – finde das Angebot, das zu dir und deinem Leben passt.</p>
       </div>
       <div class="angebote-cards">
 
@@ -277,17 +287,7 @@
           </div>
         </a>
 
-        <a href="koerperklar.html" class="angebote-card reveal-up delay-2">
-          <img src="images/Mockup_Körperklar_Faszienübungen.png" alt="Körperklar 7-Tage-Reset" class="angebote-card-img" style="object-position: 10% center;" loading="lazy" />
-          <div class="angebote-card-body">
-            <span class="angebote-card-tag">Online-Programm ·<br />7 Tage · 37 €</span>
-            <h3>Körperklar –<br />7-Tage-Reset</h3>
-            <p>Dein kompaktes Online-Programm für sofortige Wirkung. In 7 Tagen zurück zu innerer Ruhe, Klarheit und körperlicher Entspannung. Nur ca. 15 Minuten täglich.</p>
-            <span class="angebote-card-arrow">Jetzt Reset starten →</span>
-          </div>
-        </a>
-
-        <a href="unternehmen.html" class="angebote-card reveal-up delay-3">
+        <a href="unternehmen.html" class="angebote-card reveal-up delay-2">
           <img src="images/unternehmen.jpg" alt="Fit im Job – Betriebliche Gesundheit" class="angebote-card-img" loading="lazy" />
           <div class="angebote-card-body">
             <span class="angebote-card-tag">Unternehmen · BGM</span>
