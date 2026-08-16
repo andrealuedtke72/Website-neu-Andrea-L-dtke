@@ -194,6 +194,91 @@
     }
     .kd-online-feat p { font-size: .9rem; color: var(--clr-text-mid); line-height: 1.6; }
 
+    /* ── Membership conditions ── */
+    .kd-membership { background: var(--clr-ivory-dark); }
+    .kd-membership h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      text-align: center;
+      color: var(--clr-forest);
+      margin-bottom: .75rem;
+    }
+    .kd-membership h2 em { font-style: italic; color: var(--clr-forest-mid); }
+    .kd-membership-intro {
+      text-align: center;
+      color: var(--clr-text-mid);
+      max-width: 560px;
+      margin: 0 auto 3rem;
+      line-height: 1.7;
+    }
+    .kd-membership-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.75rem;
+      margin-bottom: 2.5rem;
+    }
+    @media (max-width: 700px) { .kd-membership-grid { grid-template-columns: 1fr; } }
+    .kd-membership-card {
+      background: var(--clr-white);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: 0 4px 30px rgba(82,136,160,.1);
+    }
+    .kd-membership-icon { font-size: 1.8rem; margin-bottom: .75rem; }
+    .kd-membership-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--clr-forest);
+      margin-bottom: .5rem;
+    }
+    .kd-membership-card p {
+      font-size: .92rem;
+      color: var(--clr-text-mid);
+      line-height: 1.65;
+    }
+    .kd-membership-trial {
+      background: var(--clr-white);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem;
+      text-align: center;
+      box-shadow: 0 4px 30px rgba(82,136,160,.1);
+    }
+    .kd-membership-trial h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--clr-forest);
+      margin: .5rem 0 1.5rem;
+      line-height: 1.5;
+    }
+    .kd-membership-trial-prices {
+      display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap;
+    }
+    .kd-membership-trial-price strong {
+      display: block;
+      font-family: 'Cinzel', serif;
+      font-size: .65rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--clr-forest-mid);
+      margin-bottom: .4rem;
+    }
+    .kd-membership-trial-price span {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: var(--clr-forest);
+    }
+    .kd-membership-trial-price small {
+      display: block;
+      font-family: 'Quicksand', sans-serif;
+      font-size: .7rem;
+      color: var(--clr-text-mid);
+      margin-top: .2rem;
+    }
+    @media (max-width: 480px) {
+      .kd-membership-card { padding: 1.5rem; }
+      .kd-membership-trial { padding: 1.5rem; }
+    }
+
     /* ── Benefits grid ── */
     .kd-benefits { background: var(--clr-forest); color: #fff; padding: var(--space-lg) 0; }
     .kd-benefits h2 {
@@ -441,7 +526,7 @@
               <div class="kd-detail-icon">📅</div>
               <div class="kd-detail-text">
                 <strong>Termine</strong>
-                <span>Montags</span>
+                <span>Montags (4 bzw. 5 mal/Monat)</span>
               </div>
             </div>
 
@@ -538,6 +623,65 @@
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <!-- MITGLIEDSCHAFTSBEDINGUNGEN -->
+  <section class="kd-membership section-padding">
+    <div class="container">
+      <h2>Deine Vorteile <em>in der Mitgliedschaft</em></h2>
+      <p class="kd-membership-intro">Alles, was du über deine Mitgliedschaft wissen musst – transparent und fair.</p>
+
+      <div class="kd-membership-grid">
+
+        <div class="kd-membership-card">
+          <div class="kd-membership-icon">🛡️</div>
+          <h3>1 Jahr Preisgarantie</h3>
+          <p>Wer jetzt direkt bis 31.10.2026 einsteigt, sichert sich den Gründer-Preis von 55 € fix bis Ende 2027.</p>
+        </div>
+
+        <div class="kd-membership-card">
+          <div class="kd-membership-icon">🕊️</div>
+          <h3>Maximale Freiheit</h3>
+          <p>Die Mitgliedschaft läuft unbefristet, bleibt aber absolut fair und flexibel – mit einer kurzen Kündigungsfrist von nur 1 Monat zum Monatsende.</p>
+        </div>
+
+        <div class="kd-membership-card">
+          <div class="kd-membership-icon">☀️</div>
+          <h3>Kein Kursausfall</h3>
+          <p>Wenn ich im Urlaub oder krank bin, vertritt mich eine liebe Yogalehrer-Kollegin.</p>
+        </div>
+
+        <div class="kd-membership-card">
+          <div class="kd-membership-icon">🔄</div>
+          <h3>Flexibel bei Verhinderung</h3>
+          <p>Solltest du am Online-Termin mal nicht teilnehmen können, hast du die Möglichkeit, in den Präsenzkurs in Wetzlar (Dienstags, 19 Uhr) zu wechseln oder die Aufzeichnung der Stunde zu bekommen.</p>
+        </div>
+
+        <div class="kd-membership-card">
+          <div class="kd-membership-icon">🎁</div>
+          <h3>Joker-Monat</h3>
+          <p>Einmal im Jahr kannst du dir einen Joker-Monat nehmen – beitragsfrei, z. B. für Urlaub, OP oder Kur.</p>
+        </div>
+
+      </div>
+
+      <div class="kd-membership-trial">
+        <div class="kd-membership-icon">🎟️</div>
+        <h3>Du möchtest erst einmal schnuppern oder ganz flexibel bleiben?</h3>
+        <div class="kd-membership-trial-prices">
+          <div class="kd-membership-trial-price">
+            <strong>Schnupperstunde</strong>
+            <span>Einmalig 12 €</span>
+          </div>
+          <div class="kd-membership-trial-price">
+            <strong>Drop-In / Einzelstunde</strong>
+            <span>19 €</span>
+            <small>Nach Verfügbarkeit freier Plätze</small>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
